@@ -41,11 +41,10 @@ The csv files includes predictions of the 4 models and the average of the 3 cros
 The model ```qama_full.pt``` is trained using all the Vinylset tracks. Unlike the cross-validation models, the full model has not been evaluated in the ICASSP paper although it might be more accurate. 
 Informal tests show aligned results with the cross-validation models.
 
-You can set ```full=False``` if you do not want to use QAMA full.
+You can set ```full_model=False``` if you do not want to use QAMA full.
 
 ### Correct usage
 QAMA has been evaluated for vinyl degradations and using files around 10 seconds. The model accepts variable input length but we do not know how performs for very long files. 
-
 
 ## Paper and license
 If you use QAMA or Vinylset please cite this paper: 
