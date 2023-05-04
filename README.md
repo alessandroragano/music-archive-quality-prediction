@@ -2,10 +2,10 @@
 
 ### Purpose
 QAMA is a reference-free (non-intrusive) quality metric for digitised music archives. The QAMA model is useful to predict the perceived audio quality of vinyl recordings that are digitised.
-For example, it can be used to retrieve the best quality items or to detect low-quality old vinyl recordings in a collection.
+For example, it can be used to retrieve the best quality items or to detect low-quality old vinyl recordings in a collection. The model is optimised for real-world recordings. 
 
 ### Vinylset
-The QAMA model has been trained using digitised vinyl collections including several genres e.g. classical, jazz, electronic. The dataset Vinylset includes 620 tracks extracted from original vinyl recordings and labelled with mean opinion score (MOS).
+The QAMA model has been trained using real-world recordings from vinyl discs. The dataset includes several genres e.g. classical, jazz, electronic. We collected 620 tracks extracted from original vinyl recordings and labelled them with mean opinion score (MOS).
 
 ### More Information
 For additional information on QAMA and Vinylset see the ICASSP'23 paper. For more information on quality assessment for digital audio archives see the JAES paper.
@@ -37,11 +37,15 @@ To predict the quality of your music collection, organise files in a directory a
 
 The script creates a csv file in ```prediction_files``` with date time format ```DD-MM-YYYY_hh-mm-ss_qama.csv```
 The csv files includes predictions of the 4 models and the average of the 3 cross-validation models. This is defined with the column ```Mean CV```.
-## Full model
+### Full Model
 The model ```qama_full.pt``` is trained using all the Vinylset tracks. Unlike the cross-validation models, the full model has not been evaluated in the ICASSP paper although it might be more accurate. 
 Informal tests show aligned results with the cross-validation models.
 
 You can set ```full=False``` if you do not want to use QAMA full.
+
+### Correct usage
+QAMA has been evaluated for vinyl degradations and using files around 10 seconds. The model accepts variable input length but we do not know how performs for very long files. 
+
 
 ## Paper and license
 If you use QAMA or Vinylset please cite this paper: 
