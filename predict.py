@@ -11,7 +11,7 @@ import gdown
 
 @click.command()
 @click.option('--data_dir', required=True, type=str)
-@click.option('--full_model', required=False, type=bool)
+@click.option('--full_model', required=False, type=bool, default=True)
 def predict(data_dir, full_model):
     target_sr = 16000
     
