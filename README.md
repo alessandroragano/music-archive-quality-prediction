@@ -7,7 +7,6 @@ For example, it can be used to retrieve the best quality items or to detect low-
 ### Vinylset
 The QAMA model has been trained using digitised vinyl collections including several genres e.g. classical, jazz, electronic. The dataset Vinylset includes 620 tracks extracted from original vinyl recordings and labelled with mean opinion score (MOS).
 
-
 ### More Information
 For additional information on QAMA and Vinylset see the ICASSP'23 paper. For more information on quality assessment for digital audio archives see the JAES paper.
 
@@ -42,10 +41,14 @@ The csv files includes predictions of the 4 models and the average of the 3 cros
 The model ```qama_full.pt``` is trained using all the Vinylset tracks. Unlike the cross-validation models, the full model has not been evaluated in the ICASSP paper although it might be more accurate. 
 Informal tests show aligned results with the cross-validation models.
 
+You can set ```full=False``` if you do not want to use QAMA full.
+
 ## Paper and license
 If you use QAMA or Vinylset please cite this paper: 
 
 A. Ragano, E. Benetos, and A. Hines "Audio Quality Assessment of Vinyl Music Collections using Self-Supervised Learning", in IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2023 
 
 (link will be up soon).
+
+The code is licensed under MIT licence.
 
