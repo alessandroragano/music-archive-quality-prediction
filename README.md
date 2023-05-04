@@ -42,3 +42,10 @@ The csv files includes predictions of the 4 models and the average of the 3 cros
 The model ```qama_full.pt``` is trained using all the Vinylset tracks. Unlike the cross-validation models, the full model has not been evaluated in the ICASSP paper although it might be more accurate. 
 Informal tests show aligned results with the cross-validation models.
 
+## Paper and license
+If you use QAMA or Vinylset please cite this paper: 
+
+A. Ragano, E. Benetos, and A. Hines "Audio Quality Assessment of Vinyl Music Collections using Self-Supervised Learning", in IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2023 
+
+(link will be up soon).
+
