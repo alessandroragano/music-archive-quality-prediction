@@ -11,6 +11,7 @@ The QAMA model has been trained using digitised vinyl collections including seve
 For additional information on QAMA and Vinylset see the ICASSP'23 paper. For more information on quality assessment for digital audio archives see the JAES paper.
 
 ## Installation
+First, clone the repo to your local machine.
 To use QAMA install [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) and then create the virtual environment:
 ```
 mkvirtualenv -p python3.9 QAMA
@@ -19,11 +20,10 @@ This will create a virtual environment QAMA. Then install the requirements:
 ```
 pip install -r requirements.txt
 ```
-Finally activate the virtual environment:
+Activate the virtual environment:
 ```
 workon QAMA
 ```
-
 ## Usage
 QAMA has been evaluated with a 3-fold cross-validation. We provide the 3 models plus a model trained using the full Vinylset.
 * ```qama_fold1.pt```
