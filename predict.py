@@ -7,6 +7,7 @@ import torchaudio
 import pandas as pd
 from collections import defaultdict
 from datetime import datetime
+import gdown
 
 @click.command()
 @click.option('--data_dir', required=True, type=str)
@@ -16,10 +17,27 @@ def predict(data_dir, full_model):
     
     # Set model path
     DIR_MODELS = 'models/mos_predictors'
-    models = ['w2v_arch1_3fold_0.pt', 'w2v_arch1_3fold_1.pt', 'w2v_arch1_3fold_2.pt']
+    models = ['qama_fold1.pt', 'qama_fold2.pt', 'qama_fold3.pt']
     if full_model:
-        models.append('w2vMOS_full.pt')
+        models.append('qama_full.pt')
     CHECKPOINT_PATH = 'models/pretrain/checkpoint_best.pt'
+
+    # Download models from gdrive (check if already downloaded)
+    start_download = False
+    if not os.path.isfile(CHECKPOINT_PATH):
+        start_download = True
+
+    if not start_download:
+        for m in models:
+            if ~os.path.isfile(os.path.join(DIR_MODELS, m)):
+                start_download = True
+    
+    if start_download:
+        print('Wait...Downloading models')
+        url = 'https://drive.google.com/drive/folders/1V8jwo0uaQS_og6r1By7oooBtXzFvOEIz?usp=share_link'
+        gdown.download_folder(url, quiet=True, use_cookies=False)
+        print('Download Completed')
+
     SSL_OUT_DIM = 768
     
     # Load SSL model
