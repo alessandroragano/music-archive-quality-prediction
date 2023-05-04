@@ -1,0 +1,4 @@
+filename,w2v_arch1_3fold_0,w2v_arch1_3fold_1,w2v_arch1_3fold_2,w2vMOS_full,Mean CV
+0206WhatWillMarySay_aache320_ln.wav,3.7161536,3.5896318,3.8698277,3.84489,3.7252045
+0205WeWishYouAMerryChristmas_sample_aache320_ln.wav,4.027857,3.9056697,3.9348881,4.1735716,3.9561384
+0302TchaikovskyPianoConcertoNo1_sample_aache320_ln.wav,3.4852529,3.2770565,3.575953,3.4231122,3.4460876
