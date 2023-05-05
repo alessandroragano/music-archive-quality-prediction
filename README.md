@@ -53,5 +53,5 @@ A. Ragano, E. Benetos, and A. Hines "Audio Quality Assessment of Vinyl Music Col
 
 (link will be up soon).
 
-The code is licensed under MIT licence.
+The code is licensed under MIT license.
 
