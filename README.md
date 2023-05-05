@@ -1,7 +1,8 @@
 # Quality Assessment Music Archives (QAMA)
 
 ### Purpose
-QAMA is a reference-free (non-intrusive) quality metric for digitised music archives. The QAMA model is useful to predict the perceived audio quality of vinyl recordings.
+QAMA is a reference-free (non-intrusive) quality metric for digitised music archives. The QAMA model is useful to predict the perceived audio quality of vinyl recordings. 
+The preservation of cultural heritage through audio archives is primarily focused on the process of digitization, which involves curating audio collections from various analog media formats like wax cylinders, vinyl discs, and 78 RPMs. The purpose of QAMA is to improve accessibility and usability of audio archives.
 For example, it can be used to retrieve the best quality items or to detect low-quality old vinyl recordings in a collection. The model is optimised for real-world recordings. 
 
 ### Vinylset
