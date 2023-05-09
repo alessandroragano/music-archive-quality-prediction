@@ -50,9 +50,9 @@ You can set ```full_model=False``` if you do not want to use QAMA full.
 QAMA has been evaluated for vinyl degradations and using files around 10 seconds. The model accepts variable input length but it was not evaluated for very long tracks. 
 
 ## Paper and license
-If you use QAMA or Vinylset please cite this paper: 
+If you use QAMA or Vinylset please cite this [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10096274): 
 
-A. Ragano, E. Benetos, and A. Hines "Audio Quality Assessment of Vinyl Music Collections using Self-Supervised Learning", in IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2023, [link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10096274).
+A. Ragano, E. Benetos, and A. Hines "Audio Quality Assessment of Vinyl Music Collections using Self-Supervised Learning", in IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2023.
 
 
 The code is licensed under MIT license.
